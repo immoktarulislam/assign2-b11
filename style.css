@@ -1,0 +1,146 @@
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.nav,
+.main,
+.footer {
+    padding: 2rem;
+    width: 100%;
+    margin: 2rem;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: fit-content;
+    text-align: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    gap: 4rem;
+}
+
+.nav-1 {
+    display: flex;
+}
+
+.nav-1 h4 {
+    font-size: 32 px;
+}
+
+.nav-1 button {
+    background-color: orange;
+}
+
+.main-1 {
+    display: flex;
+    justify-content: space-evenly;
+    height: fit-content;
+    text-decoration: none;
+}
+
+.main-1 a {
+    text-decoration: none;
+}
+
+.main-2 {
+    text-align: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box-container a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.main-3 h2 {
+    text-align: center;
+}
+
+.main-3-container {
+    display: flex;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.btn-1 {
+    text-align: center;
+    text-decoration: none;
+    gap: 80px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #01ACFD;
+    width: 1439px;
+
+    gap: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 80px;
+    padding: 10px;
+}
+
+.item-2 a {
+    text-decoration: none;
+    text-align: left;
+    gap: 5px;
+    display: block;
+}
+
+.item-2 {
+    text-decoration: none;
+    text-align: left;
+    gap: 5px;
+}
+
+.item-1left {
+    display: flex;
+}
+
+.item-3logo {
+    display: flex;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        grid-template-areas:
+            "nav"
+            "main"
+            "footer";
+
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .container {
+        grid-template-areas:
+            "nav"
+            "main"
+            "footer";
+    }
+
+    .footer-container {
+        display: block;
+    }
+}
